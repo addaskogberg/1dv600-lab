@@ -13,12 +13,13 @@
 
         // Get the entire file from the file system.
         readXMLFile: function(callback) {
+            console.log('det här är get file')
 
         },
 
         // Write the entire file from the file system.
         writeXMLFile: function(data) {
-
+            console.log('det här är write file')
         }
     };
 
