@@ -23,6 +23,7 @@
     dao.readXMLFile();
     dao.writeXMLFile();
     console.log('skriver den något över huvudtaget')
+    //routes.print();
 
     // Create the app module
     module.exports = app;

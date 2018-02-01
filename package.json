@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "nodemon -L app.js",
-    "test": "mocha --reporter spec",
-    "prestart": "npm test"
-
+    "test": "mocha --reporter spec"
   },
   "dependencies": {
     "body-parser": "^1.12.0",
