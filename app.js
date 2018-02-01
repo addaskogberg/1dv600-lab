@@ -8,6 +8,7 @@
     var routes = require('./app/routes/routes.js');
     var bodyParser = require('body-parser');
     var dao = require('./app/dao/LibraryDAO.js')
+   // var GetBooksResource = require('./app/resources/GetBooksResource.js')
 
     // Start the server to listen for incoming requests on port 9090.
     server.listen(9090);
@@ -20,10 +21,9 @@
     // Wire up the router.
     app.use('/', routes);
 
-    dao.readXMLFile();
-    dao.writeXMLFile();
-    console.log('skriver den något över huvudtaget')
-    //routes.print();
+    // dao.readXMLFile();
+    // dao.writeXMLFile();
+    // console.log('skriver den något över huvudtaget')
 
     // Create the app module
     module.exports = app;

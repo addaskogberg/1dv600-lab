@@ -14,7 +14,21 @@
         // Get the entire file from the file system.
         readXMLFile: function(callback) {
             console.log('det här är get file')
-
+            fs.readFile('books.xml', function(err, data){
+                if(!err){
+                    xml2js.parseString(data, function(err, result) {
+                        if(!err){
+                            console.log(result)
+                        }
+                        else{
+                            console.log('Something went wrong parsing XML')
+                        }
+                    })
+                }
+                else{
+                    console.log('Something went wrong reading XML file')
+                }
+            })
         },
 
         // Write the entire file from the file system.
